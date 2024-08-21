@@ -1,6 +1,7 @@
 package com.retailsearch.retailsearch;
 
 public enum ProjectConfig {
+    //enum constant
     RETAIL_PROJECT_ID("sinuous-anvil-432407-m4");
 
     private final String projectId;
