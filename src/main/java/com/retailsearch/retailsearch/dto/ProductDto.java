@@ -1,19 +1,31 @@
-package com.retailsearch.retailsearch.model;
+package com.retailsearch.retailsearch.dto;
 
-
-
+import com.google.cloud.retail.v2.PriceInfo;
 
 import java.util.List;
 
-public class Product {
+public class ProductDto {
     private String id;
     private String primaryProductId;
     private List<String> categories;
     private String title;
-    private PriceInfo priceInfo;
+    private PriceInfoDto priceInfo;
     private String availability;
     private String uri;
-    private List<Image> images;
+    private List<ImageDto> images;
+
+    // Constructor
+    public ProductDto(String id, String primaryProductId, List<String> categories, String title,
+                      PriceInfoDto priceInfo, String availability, String uri, List<ImageDto> images) {
+        this.id = id;
+        this.primaryProductId = primaryProductId;
+        this.categories = categories;
+        this.title = title;
+        this.priceInfo = priceInfo;
+        this.availability = availability;
+        this.uri = uri;
+        this.images = images;
+    }
 
     // Getters and setters
     public String getId() { return id; }
@@ -28,8 +40,8 @@ public class Product {
     public String getTitle() { return title; }
     public void setTitle(String title) { this.title = title; }
 
-    public PriceInfo getPriceInfo() { return priceInfo; }
-    public void setPriceInfo(PriceInfo priceInfo) { this.priceInfo = priceInfo; }
+    public PriceInfoDto getPriceInfo() { return priceInfo; }
+    public void setPriceInfo(PriceInfoDto priceInfo) { this.priceInfo = priceInfo; }
 
     public String getAvailability() { return availability; }
     public void setAvailability(String availability) { this.availability = availability; }
@@ -37,6 +49,6 @@ public class Product {
     public String getUri() { return uri; }
     public void setUri(String uri) { this.uri = uri; }
 
-    public List<Image> getImages() { return images; }
-    public void setImages(List<Image> images) { this.images = images; }
+    public List<ImageDto> getImages() { return images; }
+    public void setImages(List<ImageDto> images) { this.images = images; }
 }

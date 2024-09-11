@@ -10,9 +10,9 @@ import org.springframework.context.annotation.Configuration;
 //getService(): This method retrieves the Storage service based on the configuration provided
 // by the StorageOptions.
 // It is used to create an instance of the Storage client, which allows the code to interact with GCS.
-public class GcsConfig {
- @Bean
-    public Storage storage() {
+     public class GcsConfig {
+         @Bean
+         public Storage storage() {
         return StorageOptions.getDefaultInstance().getService();
     }
 }
