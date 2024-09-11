@@ -82,6 +82,7 @@ System.out.println(searchRequest+"searchRequest");
                         priceInfo.getCurrencyCode(),
                         priceInfo.getPrice()
                 );
+
             }
 
             // Convert Images

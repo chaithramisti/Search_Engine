@@ -3,6 +3,7 @@ package com.retailsearch.retailsearch.dto;
 public class ImageDto {
     private String uri;
 
+
     // Constructor
     public ImageDto(String uri) {
         this.uri = uri;

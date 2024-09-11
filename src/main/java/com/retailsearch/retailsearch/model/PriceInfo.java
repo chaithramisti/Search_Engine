@@ -4,6 +4,7 @@ public class PriceInfo {
     private String currencyCode;
     private double price;
 
+
     // Getters and setters
     public String getCurrencyCode() { return currencyCode; }
     public void setCurrencyCode(String currencyCode) { this.currencyCode = currencyCode; }

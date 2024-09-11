@@ -5,6 +5,7 @@ import com.google.cloud.storage.StorageOptions;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+
 @Configuration
 //controller->service->repository->entity(Config is for setting and imported to import external  data)
 //getService(): This method retrieves the Storage service based on the configuration provided

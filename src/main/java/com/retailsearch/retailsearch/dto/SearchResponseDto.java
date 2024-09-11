@@ -12,6 +12,7 @@ public class SearchResponseDto {
         this.totalSize = totalSize;
     }
 
+
     // Getters and setters
     public List<ProductDto> getProducts() {
         return products;

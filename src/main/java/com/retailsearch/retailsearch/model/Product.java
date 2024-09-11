@@ -28,6 +28,7 @@ public class Product {
     public String getTitle() { return title; }
     public void setTitle(String title) { this.title = title; }
 
+
     public PriceInfo getPriceInfo() { return priceInfo; }
     public void setPriceInfo(PriceInfo priceInfo) { this.priceInfo = priceInfo; }
 
